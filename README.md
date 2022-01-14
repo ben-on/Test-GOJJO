@@ -25,3 +25,6 @@ What the fuck is this code!
 test for the branch
 Hello, This is Mule Boss Setura
 >>>>>>> 9276322f31852ec8441572c8a36be963c60a92c8
+
+
+Done with first part. Lets begin work objective now!
