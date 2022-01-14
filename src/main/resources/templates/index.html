@@ -8,27 +8,34 @@
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
 </head>
 <body>
-    <header>
+    <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-            <div class="container-fluid" style="background-color: #8ec2e8;">
-                <a class="navbar-brand" href="#">GOJJO</a>
+            <div class="container-fluid bg-primary">
+                <a class="navbar-brand col-3" href="#">GOJJO</a>
                 <div class="collapse navbar-collapse" id="navbarNav" style="margin : 0 30px"></div>
                     <ul  class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                           </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Renting Home
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <option value=""><a class="dropdown-item" href="#">Villa 1</a></option> 
+                              <a class="dropdown-item" href="#">Bole </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">rent home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled">Contact</a>
+                            <a class="nav-link active">Contact</a>
                           </li>                        
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container ">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nisi, hic dolorum, aut quos rerum odio ipsum officia ea, quisquam laborum a saepe dignissimos distinctio exercitationem totam eum atque magnam illo porro fugiat? Pariatur fugiat assumenda suscipit molestiae consequatur et? Voluptatem magni, itaque earum, obcaecati eligendi perspiciatis iste id velit ratione vitae veritatis repellendus culpa quae, iure adipisci magnam ea explicabo voluptates deleniti. Quas, corporis. Ratione accusamus veritatis non et pariatur nulla rerum esse magni, saepe unde reiciendis ad minus aperiam, ab vero eum voluptatum praesentium reprehenderit necessitatibus aut vel. Reiciendis velit blanditiis eligendi dicta similique asperiores quidem ad distinctio.</p>
     </main>
     <footer>
