@@ -14,6 +14,10 @@ but not fine with ssh
 >>>>>>> 25a9d2dfdf6d8c45c0fdec8568f3b70f9d4be608
 >>>>>>> f4cc67ea13ccb595310813a753f6ed09c7d8
 test for the branch
+<<<<<<< HEAD
 test fot the branch
 why you are not responding
 fucing thing
+=======
+Hello, This is Mule Boss Setura
+>>>>>>> 9276322f31852ec8441572c8a36be963c60a92c8
