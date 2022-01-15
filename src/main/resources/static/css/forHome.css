@@ -24,3 +24,24 @@ header{
 .justify-content-end{
     margin-right: 5%;
 }
+.about{
+    padding:5% 0 5% 0;
+}
+.button{
+    margin:10% 0 10% 0;
+}
+.my_button{
+    text-decoration: none;
+    background-color: white;
+    color:black;
+    margin:10% 0 10% 0;
+    padding:15Px;
+    border-radius: 10px;
+}
+.contact{
+    display:flex;
+    list-style-type: none;
+}
+.contact li{
+    padding:10px;
+}
