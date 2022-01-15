@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
-    @GetMapping("/")
+    @GetMapping("/index")
     public String index(){
         return "index";
     }
@@ -14,17 +14,8 @@ public class HomeController {
         return "home";
     }
 
-    @GetMapping("/index")
+    @GetMapping("/indexTwo")
     public String indexTwo(){
         return "indexTwo";
-    }
-
-    @GetMapping("/profile")
-    public String profile(){
-        return "profile";
-    }
-    @GetMapping("/about")
-    public String about(){
-        return "aboutUs";
     }
 }

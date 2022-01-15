@@ -1,6 +1,3 @@
-header{
-    box-shadow: 0 0 5px;
-}
 .nav-link{
     color: rgb(38, 191, 238);
     font-weight: bold;
@@ -11,5 +8,4 @@ header{
     color: white;
     border-radius: 5px;
 }
-
 
