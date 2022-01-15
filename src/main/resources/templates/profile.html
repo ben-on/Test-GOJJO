@@ -8,17 +8,15 @@
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-              <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" style = "font-size: larger; font-weight: bold">
-                GOJJO
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0 mb-5" style = "box-shadow: 0 0 5px">
+              <a href="/" class="d-flex align-items-center col-md-3 mb-0 mb-md-0 text-dark text-decoration-none" style = "font-size: larger; font-weight: bold">
+                <img src = "images/whiteLogo.jpg" style = "height: 150px;"></img>
               </a>
         
               <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" style = "font-weight: bold;">
-                <li><a href="#" class="nav-link px-2 link-primary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">List of houses</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
+                <li><a href="#" class="btn btn-primary mx-1">Home</a></li>
+                <li><a href="#" class="btn btn-outline-primary mx-1">List of houses</a></li>
+                <li><a href="#" class="btn btn-outline-primary mx-1">Contact</a></li>
               </ul>
         
               <div class="col-md-3 text-end">
@@ -27,13 +25,11 @@
                 <!-- <button type="button" class="btn btn-outline-primary">Logout</button> -->
               </div>
             </header>
-          </div>
-    </header>
  
     <main class = "container">
         <div>
-            <figure class="figure justify-content-center" style = "border: 0.25px solid; ">
-                <img class = "img-fluid mx-auto" src="images/profile.png" style = "width: 100px "alt="">
+            <figure class="figure justify-content-center">
+                <img class = "img-fluid mx-auto" src="images/profile.png" style = "width: 100px; border-radius: 50%; "alt="">
                 <figcaption class="figure-caption" style = "margin: 5px ;">
                 <p>Name: Abebe Debebe kebede</p>
                 <p>Email: abebe@gmail.com</p>
@@ -41,6 +37,9 @@
                 </figcaption>
             </figure>
         </div>
+        <div class="mx-auto">
+            <a href="#" class="btn btn-primary btn-sm px-4">Add your new post</a>
+          </div>
 
         <div>
             <hr>
