@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Gojjo Rental Application</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,52 +8,62 @@
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
 </head>
 <body>
-<<<<<<< HEAD
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light h-5%" >
+            <div class="container-fluid" style="background-color: #8ec2e8;">
+                <a class="navbar-brand" href="#">GOJJO</a>
+                <div id="navbarNav" style="margin : 0 50px;"></div>
+                    <ul  class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Renting Home
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <option value=""><a class="dropdown-item" href="#">Villa 1</a></option> 
+                              <a class="dropdown-item" href="#">Bole </a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          <li class="nav-item">
+                            <a class="nav-link active">Contact</a>
+                          </li>                        
+                            <a class="nav-link" href="#">rent home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="btn btn-outline-success">login</a>
+                          </li>
+                          <a class="btn btn-outline-success">Register</a>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav> -->
 
-    </header>
-    <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nisi, hic dolorum, aut quos rerum odio ipsum officia ea, quisquam laborum a saepe dignissimos distinctio exercitationem totam eum atque magnam illo porro fugiat? Pariatur fugiat assumenda suscipit molestiae consequatur et? Voluptatem magni, itaque earum, obcaecati eligendi perspiciatis iste id velit ratione vitae veritatis repellendus culpa quae, iure adipisci magnam ea explicabo voluptates deleniti. Quas, corporis. Ratione accusamus veritatis non et pariatur nulla rerum esse magni, saepe unde reiciendis ad minus aperiam, ab vero eum voluptatum praesentium reprehenderit necessitatibus aut vel. Reiciendis velit blanditiis eligendi dicta similique asperiores quidem ad distinctio.</p>
-=======
-
+        
   <div class="container">
-    <div th:replace=fragments/Navbar> </div>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
+        GOJJO
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">List of houses</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a href="#"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
+
+        <!-- <button type="button" class="btn btn-outline-primary">Logout</button> -->
+      </div>
+    </header>
   </div>
     <main class="container">
         <div class = "row">
@@ -82,12 +91,11 @@
                 <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
                     <img src="images/home6.jpg" class="figure-img img-fluid rounded" style = "height: 30vh" alt="">
                     <figcaption class="figure-caption" style = "margin: 5px ;">
-                        <p>location: Addis Ababa, Ethiopia;</p>
+                        <p> location: Addis Ababa, Ethiopia;</p>
                         <p>Price: 10,000 per month</p>
                         <p>contact phone: 0911223344</p>
                     </figcaption>
                 </figure>
-                
             </div>
             <div class = "col">
                 <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
@@ -154,13 +162,12 @@
               </div>
           </div>
 
-        <div class="mx-auto" style = "width : 15%">
+        <div class="mx-auto " style = "width : 15%">
             <a href="#" class="btn btn-primary btn-sm px-4">see more</a>
           </div>
 
         
 
->>>>>>> 817f720baf3e91238ca0fb990dfd56ee048f7531
     </main>
     <div class="container">
         <footer class="py-3 my-4">
@@ -171,7 +178,7 @@
           </ul>
           <p class="text-center text-muted">&copy; 2022 Allright Reserved.</p>
         </footer>
-      </div>
+    </div>
       <script src = "js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

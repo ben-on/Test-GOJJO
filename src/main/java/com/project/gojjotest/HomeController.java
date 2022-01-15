@@ -9,4 +9,18 @@ public class HomeController {
     public String index(){
         return "index";
     }
+    @GetMapping("/home")
+    public String Home(){
+        return "home";
+    }
+
+    @GetMapping("/index")
+    public String indexTwo(){
+        return "indexTwo";
+    }
+
+    @GetMapping("/profile")
+    public String profile(){
+        return "profile";
+    }
 }

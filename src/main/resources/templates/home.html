@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head> 
+    <title>Welcome to Gojjo </title>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+  </head>
+  <body>
+    <script src="@{/js/bootstrap.bundle.min.js}"></script>
+
+  
+    <div class="container">
+        <div th:replace=fragments/Navbar> </div>
+        <div th:replace=fragments/header> </div>
+      <div class="row">
+        <div class = "col">
+          <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+              <img th:src="@{/images/h2.jpg}" class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+              <figcaption class="figure-caption" style = "margin: 5px ;">
+                  <p> location: Addis Ababa, Ethiopia;</p>
+                  <p>Price: 10,000 per month</p>
+                  <p>contact phone: 0911223344</p>
+              </figcaption>
+          </figure>
+          </div>
+        <div class="col">
+          <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+          <img th:src="@{/images/h3.jpg}"  class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+          <figcaption class="figure-caption" style = "margin: 5px ;">
+              <p> location: Addis Ababa, Ethiopia;</p>
+              <p>Price: 10,000 per month</p>
+              <p>contact phone: 0911223344</p>
+          </figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+          <img th:src="@{/images/h4c.jpg}"  class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+          <figcaption class="figure-caption" style = "margin: 5px ;">
+              <p> location: Addis Ababa, Ethiopia;</p>
+              <p>Price: 10,000 per month</p>
+              <p>contact phone: 0911223344</p>
+          </figcaption>
+         </figure>
+        </div>
+  
+        <div class="col">
+          <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+          <img th:src="@{/images/h5.jpg}"  class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+          <figcaption class="figure-caption" style = "margin: 5px ;">
+              <p> location: Addis Ababa, Ethiopia;</p>
+              <p>Price: 10,000 per month</p>
+              <p>contact phone: 0911223344</p>
+          </figcaption>
+         </figure>
+        </div>
+    </div>
+  
+    <div class="row">
+      <div class = "col">
+        <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+            <img th:src="@{/images/h5a.jpg}" class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+            <figcaption class="figure-caption" style = "margin: 5px ;">
+                <p> location: Addis Ababa, Ethiopia;</p>
+                <p>Price: 10,000 per month</p>
+                <p>contact phone: 0911223344</p>
+            </figcaption>
+        </figure>
+        </div>
+      <div class="col">
+        <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+        <img th:src="@{/images/h5b.jpg}"  class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+        <figcaption class="figure-caption" style = "margin: 5px ;">
+            <p> location: Addis Ababa, Ethiopia;</p>
+            <p>Price: 10,000 per month</p>
+            <p>contact phone: 0911223344</p>
+        </figcaption>
+        </figure>
+      </div>
+      <div class="col">
+        <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+        <img th:src="@{/images/h5c.jpg}"  class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+        <figcaption class="figure-caption" style = "margin: 5px ;">
+            <p> location: Addis Ababa, Ethiopia;</p>
+            <p>Price: 10,000 per month</p>
+            <p>contact phone: 0911223344</p>
+        </figcaption>
+       </figure>
+      </div>
+  
+      <div class="col">
+        <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+        <img th:src="@{/images/h5d.jpg}"  class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+        <figcaption class="figure-caption" style = "margin: 5px ;">
+            <p> location: Addis Ababa, Ethiopia;</p>
+            <p>Price: 10,000 per month</p>
+            <p>contact phone: 0911223344</p>
+        </figcaption>
+       </figure>
+      </div>
+  </div>
+    </div>
+     
+  </body>
+</html>
