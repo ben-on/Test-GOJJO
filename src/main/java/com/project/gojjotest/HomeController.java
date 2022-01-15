@@ -18,4 +18,5 @@ public class HomeController {
     public String indexTwo(){
         return "indexTwo";
     }
+    
 }
