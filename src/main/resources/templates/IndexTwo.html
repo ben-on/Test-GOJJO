@@ -6,8 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gojjo Rental Application</title> 
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{/css/forHome.css}" rel="stylesheet" />
 </head>
 <body>
+  <header>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" th:href="@{index}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " th:href="@{homelist}" >Home List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Contact</a>
+        </li>
+      </ul>
+</header>
     <header>
         <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light h-5%" >
             <div class="container-fluid" style="background-color: #8ec2e8;">
@@ -96,7 +113,6 @@
                         <p>contact phone: 0911223344</p>
                     </figcaption>
                 </figure>
-                
             </div>
             <div class = "col">
                 <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
