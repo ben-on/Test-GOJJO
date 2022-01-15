@@ -18,16 +18,19 @@
     <header>
       <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" th:href="@{index}">Home</a>
+            <a class="nav-link " aria-current="page" th:href="@{indexTwo}">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" th:href="@{homelist}" >Home List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link" th:href="@{profile}">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Contact</a>
+            <a class="nav-link" th:href="@{contact}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{aboutUs}">About</a>
           </li>
         </ul>
   </header>
