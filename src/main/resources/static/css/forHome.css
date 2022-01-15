@@ -1,26 +1,15 @@
-.justify-content-end{
-    margin: 1%;
-    margin-top: 1%;
-    color: black;
-}
 header{
-    padding: 1%;
-    background-color: rgb(243, 241, 240);
-    border-bottom: 1px solid;
-    /* border-top: 1px solid; */
+    box-shadow: 0 0 5px;
 }
 .nav-link{
     color: rgb(38, 191, 238);
+    font-weight: bold;
 }
 
 .active { 
     background-color:coral; 
     color: white;
+    border-radius: 5px;
 }
 
-.nav-item{
-    margin-right: 4%;
-}
-.justify-content-end{
-    margin-right: 5%;
-}
+

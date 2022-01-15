@@ -6,20 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gojjo Rental Application</title> 
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{/css/forHome.css}">
 </head>
 <body>
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-0 mb-5" style = "box-shadow: 0 0 5px">
-              <a href="/" class="d-flex align-items-center col-md-3 mb-0 mb-md-0 text-dark text-decoration-none" style = "font-size: larger; font-weight: bold">
+            <header class="d-flex shadow align-items-center justify-content-center justify-content-md-between py-0 mb-5" style = "box-shadow: 0 0 5px">
+              <a href="/" class="navbar-brand d-flex align-items-center">
                 <img src = "images/whiteLogo.jpg" style = "height: 150px;"></img>
               </a>
         
-              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" style = "font-weight: bold;">
+              <!-- <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" style = "font-weight: bold;">
                 <li><a href="#" class="btn btn-primary mx-1">Home</a></li>
                 <li><a href="#" class="btn btn-outline-primary mx-1">List of houses</a></li>
                 <li><a href="#" class="btn btn-outline-primary mx-1">Contact</a></li>
+              </ul> -->
+              <ul class="nav navbar-collapse justify-content-center ">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" th:href="@{index}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" th:href="@{homelist}" >Home List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
               </ul>
         
-              <div class="col-md-3 text-end">
+              <div class="">
                 <a href="#"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
         
                 <!-- <button type="button" class="btn btn-outline-primary">Logout</button> -->
