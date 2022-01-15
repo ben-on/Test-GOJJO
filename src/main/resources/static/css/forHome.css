@@ -6,11 +6,11 @@
 header{
     padding: 1%;
     background-color: rgb(243, 241, 240);
-    border-bottom: 1px solid;
+    border-bottom: 1px solid coral;
     /* border-top: 1px solid; */
 }
 .nav-link{
-    color: rgb(38, 191, 238);
+    color: coral;
 }
 
 .active { 
