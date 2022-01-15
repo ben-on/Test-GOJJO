@@ -8,12 +8,12 @@
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
 </head>
 <body>
-    <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
-            <div class="container-fluid bg-primary">
-                <a class="navbar-brand col-3" href="#">GOJJO</a>
-                <div class="collapse navbar-collapse" id="navbarNav" style="margin : 0 30px"></div>
-                    <ul  class="navbar-nav">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light h-5%" >
+            <div class="container-fluid" style="background-color: #8ec2e8;">
+                <a class="navbar-brand" href="#">GOJJO</a>
+                <div id="navbarNav" style="margin : 0 50px;"></div>
+                    <ul  class="nav justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                           </li>
@@ -30,16 +30,108 @@
                           <li class="nav-item">
                             <a class="nav-link active">Contact</a>
                           </li>                        
+                            <a class="nav-link" href="#">rent home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="btn btn-outline-success">login</a>
+                          </li>
+                          <a class="btn btn-outline-success">Register</a>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
+        GOJJO
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">List of houses</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+        <button type="button" class="btn btn-primary">Sign-up</button>
+      </div>
     </header>
-    <main class="container ">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nisi, hic dolorum, aut quos rerum odio ipsum officia ea, quisquam laborum a saepe dignissimos distinctio exercitationem totam eum atque magnam illo porro fugiat? Pariatur fugiat assumenda suscipit molestiae consequatur et? Voluptatem magni, itaque earum, obcaecati eligendi perspiciatis iste id velit ratione vitae veritatis repellendus culpa quae, iure adipisci magnam ea explicabo voluptates deleniti. Quas, corporis. Ratione accusamus veritatis non et pariatur nulla rerum esse magni, saepe unde reiciendis ad minus aperiam, ab vero eum voluptatum praesentium reprehenderit necessitatibus aut vel. Reiciendis velit blanditiis eligendi dicta similique asperiores quidem ad distinctio.</p>
+  </div>
+    </header>
+
+    <main>
+        <div class = "row">
+            <div class = "col ms-3">
+                <h2 class = "text-center">Description</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, placeat sit non soluta accusantium illum, nesciunt rerum alias ipsa eveniet sint, distinctio eius. Voluptate eaque veritatis molestias soluta fugiat reiciendis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, officia aliquam pariatur a cupiditate corrupti praesentium animi. Numquam inventore, dolorem quis maiores temporibus ex voluptatem consequatur suscipit, molestiae est laborum!</p>
+            </div>
+            <div class = "col">
+                <img src="images/house.jpg" style = "height: 50vh" alt="house image">
+            </div>
+        </div>
+        <div class = "row" style = "margin : 20px">
+            <div class = "col">
+                <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+                    <img src="images/home1.jpg" class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+                    <figcaption class="figure-caption" style = "margin: 5px ;">
+                        <p> location: Addis Ababa, Ethiopia;</p>
+                        <p>Price: 10,000 per month</p>
+                        <p>contact phone: 0911223344</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class = "col">
+                <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+                    <img src="images/home6.jpg" class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+                    <figcaption class="figure-caption" style = "margin: 5px ;">
+                        <p> location: Addis Ababa, Ethiopia;</p>
+                        <p>Price: 10,000 per month</p>
+                        <p>contact phone: 0911223344</p>
+                    </figcaption>
+                </figure>
+                
+            </div>
+            <div class = "col">
+                <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+                    <img src="images/home3.jpg" class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+                    <figcaption class="figure-caption" style = "margin: 5px ;">
+                        <p> location: Addis Ababa, Ethiopia;</p>
+                        <p>Price: 10,000 per month</p>
+                        <p>contact phone: 0911223344</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class = "col">
+                <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+                    <img src="images/home5.jpg" class="figure-img img-fluid rounded" style = "height: 25vh" alt="">
+                    <figcaption class="figure-caption" style = "margin: 5px ;">
+                        <p> location: Addis Ababa, Ethiopia;</p>
+                        <p>Price: 10,000 per month</p>
+                        <p>contact phone: 0911223344</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary btn-sm">see more</a>
     </main>
-    <footer>
-        <p>&copy;Allright reservred. 2022</p>
-    </footer>
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">List of houses</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          </ul>
+          <p class="text-center text-muted">&copy; 2022 Allright Reserved.</p>
+        </footer>
+      </div>
 </body>
 </html>
