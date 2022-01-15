@@ -9,5 +9,9 @@ public class HomeListController {
     public String homelist(){
         return "homelist";
     }
+    @GetMapping("/signup")
+    public String signup(){
+        return "signup";
+    }
     
 }
