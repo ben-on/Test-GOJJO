@@ -13,4 +13,14 @@ public class HomeController {
     public String Home(){
         return "home";
     }
+
+    @GetMapping("/index")
+    public String indexTwo(){
+        return "indexTwo";
+    }
+
+    @GetMapping("/profile")
+    public String profile(){
+        return "profile";
+    }
 }
