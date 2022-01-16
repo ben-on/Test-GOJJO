@@ -85,7 +85,7 @@
     </header>
   </div> -->
   <header class="d-flex shadow align-items-center justify-content-center justify-content-md-between px-3 mb-5 sticky-top bg-black" style = "box-shadow: 0 0 5px">
-    <a href="/" class="navbar-brand d-flex align-items-center">
+    <a href="/indexTwo" class="navbar-brand d-flex align-items-center">
     <img src = "images/gojjologo.jpg" style = "height: 15vh;"></img>
     </a>
 
@@ -105,22 +105,21 @@
     </ul> -->
     <ul class="nav navbar-collapse justify-content-end ms-auto" id="navmenu">
     <li class="nav-item">
-        <a class="nav-link " aria-current="page" th:href="@{index}">Home</a>
+        <a class="nav-link active" aria-current="page" th:href="@{indexTwo}">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link active" th:href="@{homelist}" >Home List</a>
+        <a class="nav-link" th:href="@{homelist}" >Home List</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Profile</a>
+        <a class="nav-link" th:href="@{aboutUs}">About Us</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" th:href="@{contact}">Contact</a>
     </li>
     </ul>
 
     <div class="">
-    <a href="#"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
-
+    <a th:href="@{profile}"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
     <!-- <button type="button" class="btn btn-outline-primary">Logout</button> -->
     </div>
 </header>

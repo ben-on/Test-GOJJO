@@ -10,11 +10,9 @@
 }
 
 .nav-item{
-    margin-right: 4%;
+    margin-right: 0.5%;
 }
-.justify-content-end{
-    margin-right: 5%;
-}
+
 .about{
     padding:5% 0 5% 0;
 }
