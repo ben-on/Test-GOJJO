@@ -18,4 +18,10 @@ public class HomeController {
     public String indexTwo(){
         return "indexTwo";
     }
+
+    @GetMapping("/indexOne")
+    public String indexOne(){
+        return "indexOne";
+    }
+    
 }

@@ -7,161 +7,146 @@
     <title>Gojjo Rental Application</title> 
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
     <link th:href="@{/css/forHome.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
 </head>
 <body>
-  <header>
-    <ul class="nav justify-content-end">
+  <header class="d-flex shadow align-items-center justify-content-center justify-content-md-between px-3 sticky-top bg-black" style = "box-shadow: 0 0 5px">
+    <a href="/indexTwo" class="navbar-brand d-flex align-items-center">
+    <img src = "images/gojjologo.jpg" style = "height: 15vh;"></img>
+    </a>
+
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+        >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="nav navbar-collapse justify-content-end ms-auto" id="navmenu">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" th:href="@{indexTwo}">Home</a>
+            <a class="nav-link active" aria-current="page" th:href="@{indexTwo}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " th:href="@{homelist}" >Home List</a>
+            <a class="nav-link" th:href="@{homelist}" >Home List</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" th:href="@{profile}">Profile</a>
+            <a class="nav-link" th:href="@{aboutUs}">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Contact</a>
+            <a class="nav-link" th:href="@{contact}">Contact</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" th:href="@{aboutUs}">About</a>
-        </li>
-      </ul>
+    </ul>
+
+    <div>
+        <a th:href="@{profile}"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
+    </div>
 </header>
-    <header>
-        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light h-5%" >
-            <div class="container-fluid" style="background-color: #8ec2e8;">
-                <a class="navbar-brand" href="#">GOJJO</a>
-                <div id="navbarNav" style="margin : 0 50px;"></div>
-                    <ul  class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Renting Home
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                             <option value=""><a class="dropdown-item" href="#">Villa 1</a></option> 
-                              <a class="dropdown-item" href="#">Bole </a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          <li class="nav-item">
-                            <a class="nav-link active">Contact</a>
-                          </li>                        
-                            <a class="nav-link" href="#">rent home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link">Contact</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="btn btn-outline-success">login</a>
-                          </li>
-                          <a class="btn btn-outline-success">Register</a>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
-
-        
-  <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg> -->
-        GOJJO
-      </a>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">List of houses</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Contact</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <a href="#"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
-
-        <!-- <button type="button" class="btn btn-outline-primary">Logout</button> -->
+  <main class = "bg-dark px-3">
+      <!-- <div class = "row">
+          <div class = "col ms-3">
+              <h2 class = "text-center">Description</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, placeat sit non soluta accusantium illum, nesciunt rerum alias ipsa eveniet sint, distinctio eius. Voluptate eaque veritatis molestias soluta fugiat reiciendis.</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, officia aliquam pariatur a cupiditate corrupti praesentium animi. Numquam inventore, dolorem quis maiores temporibus ex voluptatem consequatur suscipit, molestiae est laborum!</p>
+          </div>
+          <div class = "col">
+              <img class = "w-100" src="images/house.jpg" style = "" alt="house image">
+          </div>
+      </div> -->
+      <div class="row g-4 card bg-light text-center my-4">
+        <div class="col">
+              <h3 class="card-title">Description</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eius nesciunt perferendis reprehenderit tempora vel. Quibusdam sed, in dolor accusantium esse nobis saepe debitis quam ea, dolore doloremque assumenda deleniti facere voluptate exercitationem, quos provident! Atque fugiat ipsum, eos error maxime quasi, quibusdam porro repudiandae, ullam nulla quae voluptas soluta.</p>
+        </div>
+        <div class="col">
+          <img
+          src="images/home3.jpg"
+          class=" w-100"
+          alt=""
+        />
+        </div>
+          
       </div>
-    </header>
-  </div>
-    <main class="container">
-        <div class = "row">
-            <div class = "col ms-3">
-                <h2 class = "text-center">Description</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, placeat sit non soluta accusantium illum, nesciunt rerum alias ipsa eveniet sint, distinctio eius. Voluptate eaque veritatis molestias soluta fugiat reiciendis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, officia aliquam pariatur a cupiditate corrupti praesentium animi. Numquam inventore, dolorem quis maiores temporibus ex voluptatem consequatur suscipit, molestiae est laborum!</p>
-            </div>
-            <div class = "col">
-                <img src="images/house.jpg" style = "width: 50vw" alt="house image">
-            </div>
-        </div>
-        <div class = "row" style = "margin : 20px">
-            <div class = "col">
-                <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
-                    <img src="images/home1.jpg" class="figure-img img-fluid rounded" style = "height: 30vh" alt="">
-                    <figcaption class="figure-caption" style = "margin: 5px ;">
-                        <p> location: Addis Ababa, Ethiopia;</p>
-                        <p>Price: 10,000 per month</p>
-                        <p>contact phone: 0911223344</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class = "col">
-                <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
-                    <img src="images/home6.jpg" class="figure-img img-fluid rounded" style = "height: 30vh" alt="">
-                    <figcaption class="figure-caption" style = "margin: 5px ;">
-                        <p> location: Addis Ababa, Ethiopia;</p>
-                        <p>Price: 10,000 per month</p>
-                        <p>contact phone: 0911223344</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class = "col">
-                <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
-                    <img src="images/home3.jpg" class="figure-img img-fluid rounded" style = "height: 30vh" alt="">
-                    <figcaption class="figure-caption" style = "margin: 5px ;">
-                        <p> location: Addis Ababa, Ethiopia;</p>
-                        <p>Price: 10,000 per month</p>
-                        <p>contact phone: 0911223344</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class = "col">
-                <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
-                    <img src="images/home5.jpg" class="figure-img img-fluid rounded" style = "height:30vh" alt="">
-                    <figcaption class="figure-caption" style = "margin: 5px ;">
-                        <p> location: Addis Ababa, Ethiopia;</p>
-                        <p>Price: 10,000 per month</p>
-                        <p>contact phone: 0911223344</p>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
+      <!-- <div class = "row" style = "margin : 20px">
+          <div class = "col">
+              <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+                  <img src="images/home1.jpg" class="figure-img img-fluid rounded" style = "height: 30vh" alt="">
+                  <figcaption class="figure-caption" style = "margin: 5px ;">
+                      <p> location: Addis Ababa, Ethiopia;</p>
+                      <p>Price: 10,000 per month</p>
+                      <p>contact phone: 0911223344</p>
+                  </figcaption>
+              </figure>
+          </div>
+          <div class = "col">
+              <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+                  <img src="images/home6.jpg" class="figure-img img-fluid rounded" style = "height: 30vh" alt="">
+                  <figcaption class="figure-caption" style = "margin: 5px ;">
+                      <p> location: Addis Ababa, Ethiopia;</p>
+                      <p>Price: 10,000 per month</p>
+                      <p>contact phone: 0911223344</p>
+                  </figcaption>
+              </figure>
+          </div>
+          <div class = "col">
+              <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+                  <img src="images/home3.jpg" class="figure-img img-fluid rounded" style = "height: 30vh" alt="">
+                  <figcaption class="figure-caption" style = "margin: 5px ;">
+                      <p> location: Addis Ababa, Ethiopia;</p>
+                      <p>Price: 10,000 per month</p>
+                      <p>contact phone: 0911223344</p>
+                  </figcaption>
+              </figure>
+          </div>
+          <div class = "col">
+              <figure  class="figure" style = "border: 0 solid; background-color: #d9dfe4; box-shadow: 0 0 5px;">
+                  <img src="images/home5.jpg" class="figure-img img-fluid rounded" style = "height:30vh" alt="">
+                  <figcaption class="figure-caption" style = "margin: 5px ;">
+                      <p> location: Addis Ababa, Ethiopia;</p>
+                      <p>Price: 10,000 per month</p>
+                      <p>contact phone: 0911223344</p>
+                  </figcaption>
+              </figure>
+          </div>
+      </div>
 
-        <div class="row">
-            <div class="col">
-              <img class="card-img-top" style = "height: 30vh" src="images/home5.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
+      <div class="row">
+          <div class="col">
+            <img class="card-img-top" style = "height: 30vh" src="images/home5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
-            <div class="col">
-              <img class="card-img-top" style = "height: 30vh" src="images/home4.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
             </div>
-            <div class="col">
-              <img class="card-img-top" style = "height: 30vh" src="images/home6.jpg" alt="Card image cap">
+          </div>
+          <div class="col">
+            <img class="card-img-top" style = "height: 30vh" src="images/home4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="col">
+            <img class="card-img-top" style = "height: 30vh" src="images/home6.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="col">
+              <img class="card-img-top" style = "height: 30vh" src="images/home3.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -169,36 +154,105 @@
               <div class="card-footer">
                 <small class="text-muted">Last updated 3 mins ago</small>
               </div>
+          </div>
+      </div> -->
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="images/home3.jpg"
+                class="mb-3 w-100"
+                alt=""
+              />
+              <h3 class="card-title mb-3">Ismael</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <p> location: Addis Ababa, Ethiopia;</p>
+              <p>Price: 10,000 per month</p>
+              <p>contact phone: 0911223344</p>
             </div>
-            <div class="col">
-                <img class="card-img-top" style = "height: 30vh" src="images/home3.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-              </div>
           </div>
+        </div>
 
-        <div class="mx-auto " style = "width : 15%">
-            <a href="#" class="btn btn-primary btn-sm px-4">see more</a>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="images/home3.jpg"
+                class="mb-3 w-100"
+                alt=""
+              />
+              <h3 class="card-title mb-3">Ismael</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <p> location: Addis Ababa, Ethiopia;</p>
+              <p>Price: 10,000 per month</p>
+              <p>contact phone: 0911223344</p>
+            </div>
           </div>
+        </div>
 
-        
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="images/home3.jpg"
+                class="mb-3 w-100"
+                alt=""
+              />
+              <h3 class="card-title mb-3">Ismael</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <p> location: Addis Ababa, Ethiopia;</p>
+              <p>Price: 10,000 per month</p>
+              <p>contact phone: 0911223344</p>
+            </div>
+          </div>
+        </div>
 
-    </main>
-    <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">List of houses</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
-          </ul>
-          <p class="text-center text-muted">&copy; 2022 Allright Reserved.</p>
-        </footer>
-    </div>
-      <script src = "js/bootstrap.bundle.min.js"></script>
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img
+                src="images/home3.jpg"
+                class="mb-3 w-100"
+                alt=""
+              />
+              <h3 class="card-title mb-3">Ismael</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+              </p>
+              <p> location: Addis Ababa, Ethiopia;</p>
+              <p>Price: 10,000 per month</p>
+              <p>contact phone: 0911223344</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto py-4 " style = "width : 15%">
+          <a href="#" class="btn btn-primary btn-sm px-4">see more</a>
+      </div>
+  </main>
+  <footer class="py-3 bg-black text-center">
+    <ul class="nav justify-content-center font-weight-bold">
+      <li class="nav-item"><a href="#" class="nav-link px-2 ">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 ">List of houses</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 ">Contact</a></li>
+    </ul>
+    <p class="text-white">&copy; 2022 Allright Reserved.</p>
+    <a href="#" class="bottom-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+  </footer>
+  <script src = "js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

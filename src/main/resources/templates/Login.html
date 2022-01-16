@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Gojjo Rental Application</title>
+  <link th:href="@{/css/login.css}" rel="stylesheet" />
+  <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">GOJJO</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Home-List</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Contact</a>
+            </li>
+          </ul> -->
+          <ul class="nav navbar-collapse justify-content-end" id="navmenu">
+            <li class="nav-item">
+                <a class="nav-link active" th:href="@{index}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{homelist}" >Home List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{aboutUs}">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{contact}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div col-md-3>
+                <a th:href="@{Login}"><button type="button" class="btn btn-outline-primary text-white">Login</button></a>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+                <div>
+                  <a th:href="@{signup}"><button type="button" class="btn btn-outline-primary text-white">Register</button></a>
+                </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="h-100 gradient-form" style="background-color: #535d61;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-xl-10">
+              <div class="card rounded-3 text-black" style="background-color: #555555;">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="card-body p-md-5 mx-md-4" style=" color: white;">
+      
+                      <div class="text-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp" style="width: 185px;" alt="logo">
+                        <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+                      </div>
+      
+                      <form>
+                        <p>Please login to your account</p>
+      
+                        <div class="form-outline mb-4">
+                         <label class="form-label" for="form2Example11">Username</label>
+                          <input type="email" id="form2Example11" class="form-control" placeholder="Phone number or email address"/>
+                        </div>
+      
+                        <div class="form-outline mb-4">
+                        <label class="form-label" for="form2Example22">Password</label>
+                        <input type="password" id="form2Example22" class="form-control" />
+                        </div>
+      
+                        <!-- <div class="text-center pt-1 mb-5 pb-1">
+                          <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log in</button>
+                          <a class="text-muted" href="#!">Forgot password?</a>
+                        </div> -->
+      
+                        <div class="d-flex align-items-center justify-content-center pb-4">
+                          <p class="mb-0 me-2">Don't have an account?</p>
+                          <button type="button" class="btn btn-outline-dangerr" style=" color: white;">Register</button>
+                        </div>
+      
+                      </form>
+      
+                    </div>
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                    <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                      <h4 class="mb-4">We are more than just a company</h4>
+                      <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="py-3 bg-black text-center">
+        <ul class="nav justify-content-center font-weight-bold">
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">List of houses</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">Contact</a></li>
+        </ul>
+        <p class="text-white">&copy; 2022 Allright Reserved.</p>
+        <a href="#" class="bottom-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
