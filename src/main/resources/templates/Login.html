@@ -23,7 +23,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
+          <!-- <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="#learn" class="nav-link">Home</a>
             </li>
@@ -36,7 +36,32 @@
             <li class="nav-item">
               <a href="#instructors" class="nav-link">Contact</a>
             </li>
-          </ul>
+          </ul> -->
+          <ul class="nav navbar-collapse justify-content-end" id="navmenu">
+            <li class="nav-item">
+                <a class="nav-link active" th:href="@{index}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{homelist}" >Home List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{aboutUs}">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{contact}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <div col-md-3>
+                <a th:href="@{Login}"><button type="button" class="btn btn-outline-primary text-white">Login</button></a>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+                <div>
+                  <a th:href="@{signup}"><button type="button" class="btn btn-outline-primary text-white">Register</button></a>
+                </div>
+            </li>
+        </ul>
         </div>
       </div>
     </nav>
@@ -93,6 +118,17 @@
           </div>
         </div>
       </section>
+      <footer class="py-3 bg-black text-center">
+        <ul class="nav justify-content-center font-weight-bold">
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">List of houses</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">Contact</a></li>
+        </ul>
+        <p class="text-white">&copy; 2022 Allright Reserved.</p>
+        <a href="#" class="bottom-0 p-5">
+            <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </footer>
     
     <!-- Bootstrap JS -->
     <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
