@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gojjo Rental Application</title> 
-    <!-- <link rel="stylesheet" th:href="../lib/w3.css">
-    <link rel="stylesheet" th:href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link th:href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
     <link th:href="@{/css/forHome.css}" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
@@ -27,33 +24,25 @@
         >
         <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" style = "font-weight: bold;">
-    <li><a href="#" class="btn btn-primary mx-1">Home</a></li>
-    <li><a href="#" class="btn btn-outline-primary mx-1">List of houses</a></li>
-    <li><a href="#" class="btn btn-outline-primary mx-1">Contact</a></li>
-    </ul> -->
     <ul class="nav navbar-collapse justify-content-end ms-auto" id="navmenu">
-    <li class="nav-item">
-        <a class="nav-link " aria-current="page" th:href="@{indexTwo}">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" th:href="@{homelist}" >Home List</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" th:href="@{aboutUs}">About Us</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" th:href="@{contact}">Contact</a>
-    </li>
+      <li class="nav-item">
+          <a class="nav-link " aria-current="page" th:href="@{indexTwo}">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" th:href="@{homelist}" >Home List</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" th:href="@{aboutUs}">About Us</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" th:href="@{contact}">Contact</a>
+      </li>
     </ul>
 
     <div class="">
-    <a th:href="@{profile}"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
-
-    <!-- <button type="button" class="btn btn-outline-primary">Logout</button> -->
+      <a th:href="@{profile}"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
     </div>
-</header>
+  </header>
   <main style="color: white; background-color: black;">
     <div class="row">
       <div class="col">
@@ -62,57 +51,26 @@
         </div>
     </div>
       <div class="col" style="background-color: black;">
-            <!-- <ul class="nav justify-content-end" style="background-color: aliceblue;">
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" th:href="@{index}">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" th:href="@{homeList}" >Home List</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Contact</a>
-                </li>
-                <li>
-                    <a href="#"><img src="images/account.jpg" style = "height: 60px; border-radius: 50%;" alt="account_icon"></a>
-                </li>
-              </ul> -->
-            <div class="container_about">
-                <h1 class="about text-center">ABOUT US</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eum, hic, odio iste impedit earum, id voluptates est itaque nostrum sit tenetur expedita. Dolore sapiente qui distinctio perspiciatis excepturi aut?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ut esse a illum necessitatibus quidem est architecto natus inventore. Nostrum modi veniam doloremque, commodi laboriosam repellendus assumenda impedit facere delectus!</p>
-
-            </div>
-            <div class="button">
-              <a class="my_button" href="contact.html">contact us</a>
-            </div>
-            <!-- <footer class="container__footer">
-              <p class="container__footer--p">&copy; 2021 Muluken Hakim</p>
-              <address class="container__footer--address">
-                  <ul class="footer__address--list">
-                      <li class="footer__address--li"><a href="https://www.facebook.com/mulehakim" class="fa fa-facebook fa-2x"></a></li>
-                      <li class="footer__address--li"><a href="https://www.instagram.com/mulehakim" class="fa fa-instagram"></a></li>
-                      <li class="footer__address--li"><a href="https://www.twitter.com/mulukenhakim" class="fa fa-twitter"></a></li>
-                      <li class="footer__address--li"><a href="https://www.linkedin.com/in/mulukenhakim" class="fa fa-linkedin"></a></li>
-                      <li class="footer__address--li"><a href="https://www.t.me/mulehakim" class="fa fa-telegram"></a></li>
-                  </ul>
-              </address>
-          </footer> -->
+        <div class="container_about">
+          <h1 class="about text-center">ABOUT US</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eum, hic, odio iste impedit earum, id voluptates est itaque nostrum sit tenetur expedita. Dolore sapiente qui distinctio perspiciatis excepturi aut?</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ut esse a illum necessitatibus quidem est architecto natus inventore. Nostrum modi veniam doloremque, commodi laboriosam repellendus assumenda impedit facere delectus!</p>
+        </div>
+        <div class="button">
+          <a class="my_button" href="contact.html">contact us</a>
+        </div>
       </div>
   </main>
   <footer class="py-3 bg-black text-center">
     <ul class="nav justify-content-center font-weight-bold">
-    <li class="nav-item"><a href="#" class="nav-link px-2 ">Home</a></li>
-    <li class="nav-item"><a href="#" class="nav-link px-2 ">List of houses</a></li>
-    <li class="nav-item"><a href="#" class="nav-link px-2 ">Contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 ">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 ">List of houses</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 ">Contact</a></li>
     </ul>
     <p class="text-white">&copy; 2022 Allright Reserved.</p>
     <a href="#" class="bottom-0 p-5">
         <i class="bi bi-arrow-up-circle h1"></i>
     </a>
   </footer>
-        
 </body>
 </html> 

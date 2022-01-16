@@ -13,5 +13,4 @@ public class HomeListController {
     public String signup(){
         return "signup";
     }
-    
 }
