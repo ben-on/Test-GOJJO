@@ -7,6 +7,8 @@
     <title>Gojjo Rental Application</title> 
     <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
     <link th:href="@{/css/forHome.css}" rel="stylesheet" />
+    <link th:href="@{hover.css}" rel="stylesheet"/>
+  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
 </head>
 <body>
@@ -31,7 +33,7 @@
             <a class="nav-link" th:href="@{homelist}" >Home List</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" th:href="@{aboutUs}">About Us</a>
+            <a class="nav-link" th:href="@{aboutus}">About Us</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" th:href="@{contact}">Contact</a>
@@ -239,7 +241,7 @@
         </div>
       </div>
       <div class="mx-auto py-4 " style = "width : 15%">
-          <a href="#" class="btn btn-primary btn-sm px-4">see more</a>
+          <a th:href="@{homelist}" class="btn btn-primary btn-sm px-4">see more</a>
       </div>
   </main>
   <footer class="py-3 bg-black text-center">
